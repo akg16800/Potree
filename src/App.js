@@ -16,6 +16,7 @@ const appendScript = (scriptId, scriptToAppend) => {
   script.src = scriptToAppend;
   script.async = true;
   document.head.appendChild(script);
+  // kdsafj
 };
 
 function App(scrollCheck = true, keyboardCheck = true) {
