@@ -41,12 +41,6 @@ function App(scrollCheck = true, keyboardCheck = true) {
   //   // }
   // }, []);
 
-  const handleWheel = (e) => {
-    // if (scrollCheck && e.ctrlKey) {
-    //   e.preventDefault();
-    // }
-    e.preventDefault();
-  };
   const generateRandomId = () => {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const randomLetters = Array.from({ length: 3 }, () =>
@@ -78,11 +72,6 @@ function App(scrollCheck = true, keyboardCheck = true) {
         };
       });
 
-      // Set the state with the array of items
-      // setLocalStorageItems(items);
-
-      // Log the localStorage items
-      document.addEventListener("wheel", handleWheel);
       console.log("localStorage items:", items);
     }
   }, []);
